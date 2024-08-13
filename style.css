@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: hanken;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body{
+    font-family: hanken;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 0px 10px 0 hsla(241, 100%, 89%, 0.87);
+    max-width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.card .card_header{
+    width: 100%;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+.card .card_header h2{
+    color: hsl(241, 100%, 89%);
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+}
+.card .card_header .cricle-content{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card .card_header .cricle-content h2{
+    padding: 0px;
+    font-size: 2.7rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 900;
+}
+.card .card_header .cricle-content p{
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    font-size: 14px;
+}
+.card .card_header h3{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.8rem;
+    padding: 15px 0px;
+}
+.card .card_header p{
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    padding: 0px 30px;
+    margin: 0px auto;
+    padding-bottom: 15px;
+}
+.card .card_body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card .card_body h2{
+    color: hsl(224, 30%, 27%);
+    font-size: 20px;
+    padding: 15px 0px;
+    margin-bottom: 10px;
+}
+.card .card_body .alert-1{
+    background-color: hsla(0, 100%, 67%, 0.171);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+}
+.card .card_body .alert-1 .left{
+    display: flex;
+    gap: 8px;
+}
+.card .card_body .alert-1 .left p{
+  color: hsl(0, 100%, 67%);
+}
+.card .card_body .alert-1 p{
+    color: hsl(241, 100%, 89%);
+}
+.card .card_body .alert-1 p b{
+    color: hsl(224, 30%, 27%);
+}
+.card .card_body .alert-2{
+    background-color: hsla(39, 100%, 56%, 0.219);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+}
+.card .card_body .alert-2 .left{
+    display: flex;
+    gap: 8px;
+}
+.card .card_body .alert-2 .left p{
+    color: hsl(39, 100%, 56%);
+}
+.card .card_body .alert-2 p{
+    color: hsl(241, 100%, 89%);
+}
+.card .card_body .alert-2 p b{
+    color: hsl(224, 30%, 27%);
+}
+.card .card_body .alert-3{
+    background-color: hsla(166, 100%, 37%, 0.151);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+}
+.card .card_body .alert-3 .left{
+    display: flex;
+    gap: 8px;
+}
+.card .card_body .alert-3 .left p{
+    color: hsl(166, 100%, 37%);
+}
+.card .card_body .alert-3 p{
+    color: hsl(241, 100%, 89%);
+}
+.card .card_body .alert-3 p b{
+    color: hsl(224, 30%, 27%);
+}
+.card .card_body .alert-4{
+    background-color: hsla(234, 85%, 45%, 0.090);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 25px;
+}
+.card .card_body .alert-4 .left{
+    display: flex;
+    gap: 8px;
+}
+.card .card_body .alert-4 .left p{
+    color: hsl(234, 85%, 45%);
+}
+.card .card_body .alert-4 p{
+    color: hsl(241, 100%, 89%);
+}
+.card .card_body .alert-4 p b{
+    color: hsl(224, 30%, 27%);
+}
+.card .card_body .continue{
+    text-decoration: none;
+    background-color: hsl(224, 30%, 27%);
+    padding: 15px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+.card .card_body .continue:hover{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+@media  (min-width:768px){
+    .card{
+        max-width: 600px;
+        flex-direction: row;
+    }
+    .card_header{
+        flex: 1;
+    }
+    .card_body{
+        flex:1;
+    }
+}
